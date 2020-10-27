@@ -27,6 +27,32 @@ h1 {
   height: 100vh;
 }
 
+.group::before,
+.channel::before {
+  display: inline-block;
+  vertical-align: top;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 5px;
+  content: "";
+}
+
+.group::before {
+  background-image: url("../img/group.svg");
+}
+
+.channel::before {
+  background-image: url("../img/channel.svg");
+}
+
 .modal-btn {
   font-size: 19px;
+}
+
+.user {
+  font-size: 14px;
 }
