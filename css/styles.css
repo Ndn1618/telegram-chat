@@ -54,8 +54,60 @@ h1 {
   font-size: 19px;
 }
 
+.border-right,
+.border-bottom,
+.border-top,
+.chat-list-item {
+  border-color: rgb(216, 142, 154)!important;
+}
+
+.chat-list-item,
+.chat-list-item:hover {
+  background-color: transparent;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem palevioletred;
+}
+
 .user {
   font-size: 14px;
+}
+
+.user-file {
+  color: palevioletred;
+}
+
+.list-group-item.active {
+  color: #495057;
+  background-color:pink;
+  border-color: palevioletred;
+}
+
+.message-time {
+  bottom: 1px;
+  right: 5px;
+}
+
+.messaging-btn {
+  padding-left: 10.5px;
+  padding-right: 10.5px;
+}
+
+.messaging-btn-link {
+  padding-left: 11.5px;
+  padding-right: 11.5px;
+}
+
+.modal-open-btn:focus,
+.messaging-btn-link:focus,
+.messaging-btn:focus {
+  background-color: pink;
+  box-shadow: none;
+}
+
+.badge-primary {
+  background-color: rgb(224, 130, 162);
 }
 
 .settings-modal {

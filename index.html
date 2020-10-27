@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body style="background-color: rgba(255, 182, 193, 0.5);">
 
   <h1 class="sr-only">Telegram chat demo</h1>
 
@@ -22,7 +22,7 @@
         <h2 class="sr-only">Search and chats</h2>
         <header class="search-box d-flex align-items-center p-3">
           <!-- Modal tugmasi -->
-          <button class="modal-btn btn btn-sm mr-2 py-0" type="button" aria-label="Open settings" data-toggle="modal"
+          <button class="modal-open-btn rounded-circle modal-btn btn btn-sm mr-2 py-0" type="button" aria-label="Open settings" data-toggle="modal"
           data-target="#settings-modal">&#9776;</button>
 
           <!-- Qidiruv formasi -->
@@ -39,7 +39,7 @@
         <!-- Chats -->
         <ul class="list-group border-bottom">
           <li>
-            <a class="list-group-item list-group-item-action px-3 border-bottom-0 border-left-0 border-right-0 bg-white" href="#">
+            <a class="chat-list-item list-group-item list-group-item-action px-3 border-bottom-0 border-left-0 border-right-0" href="#students-credit-system"  data-toggle="tab">
               <div class="media">
                 <img class="mr-3 rounded-circle" src="img/credit-system.jpg" alt="Credit system" width="50"
                 height="50">
@@ -50,7 +50,7 @@
                   </div>
                   <div class="d-flex align-items-center">
                     <div class="user flex-grow-1 text-truncate">
-                      <span class="user-name text-primary">216-19 Jo'rayev Nurbek:</span>
+                      <span class="user-file">216-19 Jo'rayev Nurbek:</span>
                       <span>Kankulyatorda manashunaqa belgi bor</span>
                     </div>
                     <span class="small ml-1 badge badge-secondary badge-pill">555</span>
@@ -61,7 +61,7 @@
           </li>
 
           <li>
-            <a class="list-group-item list-group-item-action px-3 border-bottom-0 border-left-0 border-right-0 bg-white" href="#">
+            <a class="chat-list-item list-group-item list-group-item-action px-3 border-bottom-0 border-left-0 border-right-0" href="#lobar"  data-toggle="tab">
               <div class="media">
                 <img class="mr-3 rounded-circle" src="img/lobar.jpg" alt="Lobar's profile picture" width="50" height="50">
                 <div class="media-body w-100 overflow-hidden">
@@ -71,7 +71,7 @@
                   </div>
                   <div class="d-flex align-items-center">
                     <div class="user flex-grow-1 text-truncate">
-                      <span class="user-file text-primary">Video,</span>
+                      <span class="user-file">Video,</span>
                       <span>📹 Articles (a, an, the) - Lesson 1 - 7 Rules For Using Articles Correctly</span>
                     </div>
                     <span class="small ml-1 badge badge-primary badge-pill">1</span>
@@ -82,7 +82,7 @@
           </li>
 
           <li>
-            <a class="list-group-item list-group-item-action px-3 border-bottom-0 border-left-0 border-right-0 bg-white" href="#">
+            <a class="chat-list-item list-group-item list-group-item-action px-3 border-bottom-0 border-left-0 border-right-0" href="#najot-talim"  data-toggle="tab">
               <div class="media">
                 <img class="mr-3 rounded-circle" src="img/najot-talim.png" alt="Najot ta'lim" width="50"
                 height="50">
@@ -93,7 +93,7 @@
                   </div>
                   <div class="d-flex align-items-center">
                     <div class="user flex-grow-1 text-truncate">
-                      <span class="user-file text-primary"></span>
+                      <span class="user-file"></span>
                       <span>“Imkon” loyihasida saralash nihoyasiga yetdi: darslar 4-noyabrdan boshlanadi!</span>
                     </div>
                     <span class="small ml-1 badge badge-secondary badge-pill">3</span>
@@ -104,7 +104,7 @@
           </li>
 
           <li>
-            <a class="list-group-item list-group-item-action px-3 border-bottom-0 border-left-0 border-right-0 bg-white" href="#">
+            <a class="chat-list-item list-group-item list-group-item-action px-3 border-bottom-0 border-left-0 border-right-0" href="#muza"  data-toggle="tab">
               <div class="media">
                 <img class="mr-3 rounded-circle" src="img/muza.jpg" alt="Mahfuza's profile picture" width="50" height="50">
                 <div class="media-body w-100 overflow-hidden">
@@ -114,7 +114,7 @@
                   </div>
                   <div class="d-flex align-items-center">
                     <div class="user flex-grow-1 text-truncate">
-                      <span class="user-file text-primary"></span>
+                      <span class="user-file"></span>
                       <span>Rahmat☺️aytganiz kelsin</span>
                     </div>
                     <span class="small ml-1 badge badge-primary badge-pill"></span>
@@ -126,27 +126,119 @@
         </ul>
       </section>
     </section>
+
+    <!-- Messaging window  list -->
+
+
     <div class="telegram-middle col-md-6 border-right overflow-hidden">
       <h2 class="sr-only">Chat and messages</h2>
-        <header class="d-flex align-items-stretch px-3 py-2 border-bottom">
-          <a class="btn-link flex-grow-1 text-dark text-decoration-none" data-toggle="modal" href="#settings-modal">
-            <h3 class="h6 font-weight-bolder mb-1">Лобар</h3>
-            <span>last seen recently</span>
-          </a>
-          <a class="d-flex btn-link text-decoration-none px-2" href="tel:+998900000000" target="_blank">
-            <img class="d-block" src="img/phone.svg" alt="Phone" width="24" height="24">
-          </a>
-          <button class="btn px-2" type="button">
-            <img class="d-block" src="img/search.svg" alt="search" width="24" height="24">
-          </button>
-          <button class="btn px-2" type="button">
-            <img class="d-block" src="img/more.svg" alt="more" width="24" height="24">
-          </button>
+
+      <!-- Messaging window  list top -->
+
+      <header class="d-flex align-items-stretch px-3 py-2 border-bottom">
+        <a class="btn-link flex-grow-1 text-dark text-decoration-none" data-toggle="modal" href="#settings-modal">
+          <h3 class="h6 font-weight-bolder mb-1">Лобар</h3>
+          <span>last seen recently</span>
+        </a>
+        <a class="messaging-btn-link rounded-circle d-flex btn-link text-decoration-none" href="tel:+998900000000">
+          <img class="d-block" src="img/phone.svg" alt="Phone" width="24" height="24">
+        </a>
+        <button class="messaging-btn btn rounded-circle" type="button">
+          <img class="d-block" src="img/search.svg" alt="search" width="24" height="24">
+        </button>
+        <button class="messaging-btn btn rounded-circle" type="button">
+          <img class="d-block" src="img/more.svg" alt="more" width="24" height="24">
+        </button>
       </header>
-      </a>
+
+      <!-- Messaging window list -->
+      <div class="tab-content h-100 overflow-auto">
+        <div class="tab-pane" id="students-credit-system" role="tabpanel">
+          <div class="d-flex flex-column p-3">
+            <!-- Sender -->
+            <div class="media pb-2 align-items-end mr-auto w-75">
+              <img class="rounded-circle d-block" src="img/ustoz.jpg" alt="Fullstack Group Number 2" width="50" height="50">
+              <div class="message-box-content media-body ml-2 bg-white rounded px-3 py-2 pb-4 w-75 position-relative">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <h4 class="h6 mb-0">Muhammadjavohir Sur'atov</h4>
+                  <button class="btn btn-link text-muted pl-2" type="button">Reply</button>
+                </div>
+                <p class="m-0">Ertaga markazga kelib imtihon ustida ishlashni ixtiyoriy qilamiz. Sharti - dars boshidagi maket bo'yicha muhokama qismiga Zoomda qatnashish. Sababi - biron nuqtasida ikkilanib turgan bo'lsangiz yoki ta'rifi mavhumroq bo'lsa, o'sha savollarga javob bolish mumkin bo'ladi.
+                  <br>
+                  Iltimos, imtihon mezonlari bilan tanishib chiqib, ikkilantirayotgan nuqtalari bo'yicha savollaringizni yuboringlar
+                  <br><br>
+                  O'qiganlardan plyuslar 😊
+                </p>
+                <time class="message-time text-muted position-absolute">19:43</time>
+              </div>
+            </div>
+
+            <!-- Sender -->
+            <div class="message-box media py-2 align-items-end mr-auto">
+              <img class="rounded-circle d-block" src="img/sardor.jpg" alt="Fullstack Group Number 2" width="50" height="50">
+              <div class="message-box-content media-body ml-2 bg-white rounded px-3 py-2 pb-4 w-75 position-relative">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <h4 class="h6 mb-0">Sardorbek</h4>
+                  <button class="btn btn-link text-muted pl-2" type="button">Reply</button>
+                </div>
+                <p class="m-0">+
+                  <br>
+                  hop bo'ladi, raxmat
+                </p>
+                <time class="message-time text-muted position-absolute">19:43</time>
+              </div>
+            </div>
+
+            <!-- Sender -->
+            <div class="message-box media py-2 align-items-end mr-auto">
+              <img class="rounded-circle d-block" src="img/temurbek.jpg" alt="Fullstack Group Number 2" width="50" height="50">
+              <div class="message-box-content media-body ml-2 bg-white rounded px-3 py-2 pb-4 w-75 position-relative">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <h4 class="h6 mb-0">Temurbek</h4>
+                  <button class="btn btn-link text-muted pl-2" type="button">Reply</button>
+                </div>
+                <p class="m-0">+</p>
+                <time class="message-time text-muted position-absolute">19:43</time>
+              </div>
+            </div>
+
+            <!-- Reciever -->
+            <div class="media ml-auto align-items-end">
+              <img class="rounded-circle d-block order-1" src="img/hand.jpg" alt="Fullstack Group Number 2" width="50" height="50">
+              <div class="message-box-content media-body mr-2 bg-white rounded px-3 py-2 pb-4 w-75 position-relative">
+                <p class="m-0">+</p>
+                <time class="message-time text-muted position-absolute">19:46</time>
+              </div>
+            </div>
+
+            <!-- Sender -->
+            <div class="message-box media pt-2 align-items-end mr-auto">
+              <img class="rounded-circle d-block" src="img/usmonjon.jpg" alt="Fullstack Group Number 2" width="50" height="50">
+              <div class="message-box-content media-body ml-2 bg-white rounded px-3 py-2 pb-4 w-75 position-relative">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <h4 class="h6 mb-0">Usmonjon</h4>
+                  <button class="btn btn-link text-muted pl-2" type="button">Reply</button>
+                </div>
+                <p class="m-0">
+                  +
+                  <br>
+                  Hop bo'ladi)
+                </p>
+                <time class="message-time text-muted position-absolute">19:43</time>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="lobar" role="tabpanel">...</div>
+        <div class="tab-pane" id="najot-talim" role="tabpanel">...</div>
+        <div class="tab-pane" id="muza" role="tabpanel">...</div>
+      </div>
     </div>
-    <div class="col-md-3"></div>
   </div>
+
+
+  <div class="col-md-3"></div>
+</div>
 </div>
 
 <!-- Modals -->
