@@ -23,7 +23,8 @@ h1 {
   font-weight: bold;
 }
 
-.telegram-left {
+.telegram-left,
+.telegram-middle {
   height: 100vh;
 }
 
