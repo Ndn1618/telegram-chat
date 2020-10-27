@@ -53,8 +53,7 @@ h1 {
   font-weight: bold;
 }
 
-.telegram-left,
-.telegram-middle {
+.telegram-left {
   height: 100vh;
 }
 
@@ -116,7 +115,12 @@ h1 {
 
 .message-time {
   bottom: 1px;
-  right: 5px;
+  right: 7px;
+}
+
+.message-box-content {
+  max-width: 75%;
+  min-width: 50px;
 }
 
 .messaging-btn {
