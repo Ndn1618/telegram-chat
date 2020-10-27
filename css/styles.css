@@ -56,3 +56,18 @@ h1 {
 .user {
   font-size: 14px;
 }
+
+.settings-modal {
+  max-width: 350px;
+}
+
+.modal-close-btn {
+  width: 28px;
+  height: 28px;
+  font-size: 28px;
+  line-height: 18px;
+  background-image: url("../img/close-btn.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 16px;
+}
