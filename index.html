@@ -18,9 +18,9 @@
 
   <div class="d-none d-md-block">
     <div class="row no-gutters">
-      <section class="col-md-3 border-right">
+      <section class="telegram-left col-md-3 border-right overflow-hidden">
         <h2 class="sr-only">Search and chats</h2>
-        <header class="d-flex align-items-center p-3">
+        <header class="search-box d-flex align-items-center p-3">
           <!-- Modal tugmasi -->
           <button class="modal-btn btn btn-sm mr-2 py-0" type="button" aria-label="Open settings" data-toggle="modal"
             data-target="#settings-modal">&#9776;</button>
@@ -32,6 +32,28 @@
               aria-label="Search" placeholder="Search" required>
           </form>
         </header>
+
+        <section class="chats h-100 overflow-auto">
+          <h3 class="sr-only">Chats</h3>
+
+          <!-- Chats -->
+          <ul class="list-group">
+            <li>
+              <a class="list-group-item list-group-item-action px-3" href="#">
+                <div class="media">
+                  <img class="mr-3 rounded-circle" src="img/credit-system.jpg" alt="Credit system" width="50"
+                    height="50">
+                  <div class="media-body w-100 overflow-hidden">
+                    <div class="d-flex align-items-center">
+                      <h4 class="h6 font-weight-bolder flex-grow-1 text-truncate mb-0">Students of Credit System</h4>
+                      <time class="small ml-1" datetime="2020-10-27 15:55:00">15:55</time>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
       </section>
       <div class="col-md-6"></div>
       <div class="col-md-3"></div>

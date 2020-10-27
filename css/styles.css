@@ -23,6 +23,10 @@ h1 {
   font-weight: bold;
 }
 
+.telegram-left {
+  height: 100vh;
+}
+
 .modal-btn {
   font-size: 19px;
 }
