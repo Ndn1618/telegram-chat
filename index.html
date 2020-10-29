@@ -141,7 +141,7 @@
           <div class="d-flex flex-column vh-100">
             <!-- Messaging window  list top -->
             <header class="d-flex align-items-stretch px-3 py-2 border-bottom">
-              <a class="btn-link flex-grow-1 text-dark text-decoration-none" data-toggle="modal" href="#settings-modal">
+              <a class="btn-link flex-grow-1 text-dark text-decoration-none" data-toggle="modal" href="#group-modal">
                 <h3 class="h6 font-weight-bolder mb-1">Students of Credit System</h3>
                 <div class="text-muted"><span>648</span> members</div>
               </a>
@@ -247,17 +247,17 @@
         <div class="settings-modal modal-content border-0 rounded-0">
           <header class="modal-header">
             <h2 class="h4 mb-0">Settings</h2>
-            <button class="modal-close-btn btn p-1" type="button" data-dismiss="modal" aria-label="Close"></button>
+            <button class="modal-close-btn btn p-1 rounded-circle" type="button" data-dismiss="modal" aria-label="Close"></button>
           </header>
 
           <div class="modal-body px-0">
             <!-- Modal image -->
-            <div class="d-flex align-items-center mb-3 px-3">
+            <div class="d-flex align-items-center mb-4 px-4">
               <img class="d-block rounded-circle mr-3" src="img/ndn.jpg" alt="My profile picture" width="80"
                 height="80">
               <div>
                 <h2 class="h5 font-weight-bolder">Dilbar</h2>
-                <span class="text-primary">online</span>
+                <span class="text-pink">online</span>
               </div>
             </div>
 
@@ -292,6 +292,80 @@
                 href="#">
                 <img class="d-block mr-4" src="img/advanced.png" alt="Advanced" width="24" height="24">
                 <span>Advanced</span>
+              </a>
+              <a class="d-flex align-items-center list-group-item list-group-item-action border-0 text-capitalize"
+                href="#">
+                <div class="d-flex align-items-center flex-grow-1">
+                  <img class="d-block mr-4" src="img/language.svg" alt="Choose language" width="24" height="24">
+                  <span>Language</span>
+                </div>
+                <span class="text-pink">English</span>
+              </a>
+              <a class="d-flex align-items-center list-group-item list-group-item-action border-0 text-capitalize"
+                href="#">
+                <img class="d-block mr-4" src="img/advanced.png" alt="Advanced" width="24" height="24">
+                <span>Advanced</span>
+              </a>
+              <a class="d-flex align-items-center list-group-item list-group-item-action border-0 text-capitalize"
+                href="#">
+                <img class="d-block mr-4" src="img/faq.svg" alt="Telegram FAQ" width="24" height="24">
+                <span>Telegram FAQ</span>
+              </a>
+              <a class="ask-question-link d-flex align-items-center list-group-item list-group-item-action border-0"
+                href="#">
+                <span class="ml-4">Ask a question</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Group modal -->
+    <div class="gruop-modal-box modal fade" id="group-modal">
+      <div class="group-modal-dialog modal-dialog">
+        <div class="group-modal modal-content border-0">
+          <header class="modal-header">
+            <h2 class="h4 mb-0">Group Info</h2>
+            <button class="modal-close-btn btn p-1 rounded-circle" type="button" data-dismiss="modal" aria-label="Close"></button>
+          </header>
+
+          <div class="modal-body px-0">
+            <!-- Modal image -->
+            <div class="d-flex align-items-center mb-4 px-4">
+              <img class="d-block rounded-circle mr-3" src="img/credit-system.jpg" alt="photo" width="80" height="80">
+              <div>
+                <h2 class="h5 font-weight-bolder">Students of Credit System</h2>
+                <span class="text-muted">648 members</span>
+              </div>
+            </div>
+
+            <!-- Modal information -->
+            <div class="d-flex align-items-start px-4">
+              <img class="d-block mr-5 mt-2" src="img/edit-profile.svg" alt="Info" width="24" height="24">
+              <div>
+                <div class="d-flex flex-column mb-2">
+                  <a class="text-pink" href="https://t.me/tuit_gr20" target="_blank">t.me/tuit_gr20</a>
+                  <span class="text-muted">Link</span>
+                </div>
+                <div class="d-flex flex-column mb-2">
+                  <span>Assalomu alaykum va rohmatullohu va barokatuh!
+                    <br>
+                    Hurmatli qizlar iltimos bollarimizning lichkasiga yozmang. Ular ham kimning ukasi kimningdir akasi). Guruhga bollar bilan tanishish uchun qo'shilmagansiz va guruh bu maqsadda ochilmagan!
+                  </span>
+                  <span class="text-muted">Description</span>
+                </div>
+              </div>
+            </div>
+
+            <hr>
+
+            <!-- Modal actions -->
+            <div class="list-group list-group-flush">
+              <a class="d-flex align-items-center list-group-item list-group-item-action border-0 text-capitalize"
+                href="#">
+                <img class="d-block mr-4" src="img/edit-profile.svg" alt="Edit profile" width="24" height="24">
+                <span>Edit profile</span>
               </a>
             </div>
           </div>

@@ -79,6 +79,11 @@ h1 {
   background-image: url("../img/channel.svg");
 }
 
+.text-pink,
+a.text-pink:hover {
+  color: rgb(231, 141, 156);
+}
+
 .modal-btn {
   font-size: 19px;
 }
@@ -135,7 +140,8 @@ h1 {
 
 .modal-open-btn:focus,
 .messaging-btn-link:focus,
-.messaging-btn:focus {
+.messaging-btn:focus,
+.modal-close-btn:focus {
   background-color: pink;
   box-shadow: none;
 }
@@ -161,4 +167,11 @@ h1 {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 16px;
+}
+
+.ask-question-link::before {
+  display: block;
+  width: 24px;
+  height: 24px;
+  content: "";
 }
