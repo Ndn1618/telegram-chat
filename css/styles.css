@@ -144,8 +144,12 @@ h1 {
   background-color: rgb(224, 130, 162);
 }
 
-.settings-modal {
-  max-width: 350px;
+.settings-modal-box.fade .settings-modal-dialog {
+  transform: translate(-100%, 0);
+}
+
+.settings-modal-box.show .settings-modal-dialog {
+  transform: translate(0, 0);
 }
 
 .modal-close-btn {
