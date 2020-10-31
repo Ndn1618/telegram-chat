@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Telegram chat</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -30,7 +30,7 @@
           <!-- Qidiruv formasi -->
           <form class="flex-grow-1" action="https://echo.htmlacademy.ru" method="GET" spellcheck="false"
             autocomplete="off">
-            <input class="form-control form-control-sm border-0 bg-light px-3" type="serach" name="serach"
+            <input class="search-input form-control form-control-sm border-0 bg-light px-3" type="serach" name="serach"
               aria-label="Search" placeholder="Search" required>
           </form>
         </header>
@@ -373,9 +373,9 @@
               </a>
 
               <div class="nav nav-tabs px-4" id="nav-tab" role="tablist">
-                <a class="nav-link active" id="nav-photos-tab" data-toggle="tab" href="#nav-photos" role="tab" aria-controls="nav-photos" aria-selected="true">Photos</a>
-                <a class="nav-link" id="nav-videos-tab" data-toggle="tab" href="#nav-videos" role="tab" aria-controls="nav-videos" aria-selected="false">Videos</a>
-                <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+                <a class="text-pink nav-link active" id="nav-photos-tab" data-toggle="tab" href="#nav-photos" role="tab" aria-controls="nav-photos" aria-selected="true">Photos</a>
+                <a class="text-pink nav-link" id="nav-videos-tab" data-toggle="tab" href="#nav-videos" role="tab" aria-controls="nav-videos" aria-selected="false">Videos</a>
+                <a class="text-pink nav-link" id="nav-audios-tab" data-toggle="tab" href="#nav-audios" role="tab" aria-controls="nav-audios" aria-selected="false">Audio files</a>
               </div>
               <div class="tab-content px-4 pt-3" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-photos" role="tabpanel" aria-labelledby="nav-photos-tab">
@@ -426,7 +426,7 @@
                   </video>
                   </div>
                 </div>
-                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <div class="tab-pane fade" id="nav-audios" role="tabpanel" aria-labelledby="nav-audios-tab">
                   <audio controls>
                     <source src="audio/chord-overstreet.mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
