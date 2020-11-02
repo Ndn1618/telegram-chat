@@ -152,9 +152,20 @@
               <button class="messaging-btn btn rounded-circle" type="button">
                 <img class="d-block" src="img/search.svg" alt="search" width="24" height="24">
               </button>
-              <button class="messaging-btn btn rounded-circle" type="button">
-                <img class="d-block" src="img/more.svg" alt="more" width="24" height="24">
-              </button>
+              <!-- More dropdown -->
+              <div class="btn-group">
+                <button class="messaging-btn btn rounded-circle" data-toggle="dropdown" type="button">
+                  <img class="d-block" src="img/more.svg" alt="more" width="24" height="24">
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <button class="dropdown-item" type="button" data-toggle="modal" data-target="#group-modal">View group info</button>
+                  <button class="dropdown-item" type="button">Enable notifications</button>
+                  <button class="dropdown-item" type="button">Add members</button>
+                  <button class="dropdown-item" type="button">Export chat history</button>
+                  <button class="dropdown-item" type="button">Leave group</button>
+                  <button class="dropdown-item" type="button">Report</button>
+                </div>
+              </div>
             </header>
 
             <main class="h-100 overflow-auto">

@@ -198,3 +198,9 @@ a.text-pink:hover {
   height: 24px;
   content: "";
 }
+
+/* Dropdown styles */
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: palevioletred;
+}
