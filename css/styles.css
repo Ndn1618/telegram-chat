@@ -118,6 +118,15 @@ a.text-pink:hover {
   height: 40px;
 }
 
+.message-input:focus,
+.send-button:focus {
+  box-shadow: none;
+}
+
+.send-button {
+  padding: 5px;
+}
+
 .user {
   font-size: 14px;
 }

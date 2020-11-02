@@ -220,12 +220,12 @@
                 <div class="input-group">
                   <label class="file-input-label d-flex mb-0 align-items-center justify-content-center position-relative" for="file-input">
                     <input class="file-input sr-only form-control-file position-absolute" id="file-input" type="file" name="file">
-                    <img class="file-input-img flex-shrink-0" src="img/documents.svg" alt="Add file" width="40" height="40">
+                    <img class="d-block file-input-img flex-shrink-0" src="img/documents.svg" alt="Add file" width="40" height="40">
                   </label>
-                  <input class="form-control rounded-0 border-0 py-4 bg-light flex-grow-1" type="text" name="message" placeholder="Write a message..." required>
+                  <input class="message-input form-control rounded-0 border-0 py-4 bg-light flex-grow-1" type="text" name="message" placeholder="Write a message..." autocomplete="off" required>
                   <div class="input-group-append">
-                    <button class="btn" type="submit">
-                      <span>Hello</span>
+                    <button class="send-button btn rounded-circle" type="submit">
+                      <img class="d-block" src="img/send.svg" alt="Send icon" width="36" height="36">
                     </button>
                   </div>
                 </div>
