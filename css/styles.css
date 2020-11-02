@@ -104,6 +104,20 @@ a.text-pink:hover {
   box-shadow: 0 0 0 0.2rem palevioletred;
 }
 
+.file-input-label {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.file-input {
+  z-index: -1;
+}
+
+.file-input-img {
+  width: 40px;
+  height: 40px;
+}
+
 .user {
   font-size: 14px;
 }
